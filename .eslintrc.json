@@ -5,6 +5,14 @@
     },
     "extends": ["airbnb-base", "eslint:recommended", "prettier"],
     "overrides": [],
+    "ignorePatterns": [
+        "/node_modules",
+        "/vendor",
+        "/dist",
+        "/lang",
+        "/src/assets/fontello",
+        "fontello.js"
+    ],
     "parserOptions": {
         "ecmaVersion": "latest",
         "sourceType": "module"
