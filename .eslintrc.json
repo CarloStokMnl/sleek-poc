@@ -10,8 +10,15 @@
         "/vendor",
         "/dist",
         "/lang",
-        "/src/assets/fontello",
-        "fontello.js"
+        "/src/icons.json",
+        "/src/assets/",
+        "/fontello.js",
+        "/webpack.config.js",
+        "/package.json",
+        "/.eslintrc.json",
+        "/fontello.js",
+        "/composer.json",
+        ".*"
     ],
     "parserOptions": {
         "ecmaVersion": "latest",

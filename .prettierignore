@@ -6,3 +6,17 @@ node_modules
 dist
 lang
 vendor
+package.json
+composer.json
+composer.lock
+editor-style.css
+fontello.json
+README.md
+style.css
+webpack.config.js
+.github
+**/.git
+src/assets/fontello
+.prettierrc
+/fontello.js
+src/icons.json
