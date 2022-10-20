@@ -8,7 +8,11 @@
     "build": "webpack --mode production",
     "fontello": "node fontello.js",
     "make-pot": "cp -r vendor/powerbuoy ___sleek && wp sleek make-cpt-strings && wp i18n make-pot . lang/sleek.pot --domain=sleek && rm -r ___sleek",
-    "make-pot-admin": "cp -r vendor/powerbuoy ___sleek && wp i18n make-pot . lang/admin/sleek_admin.pot --domain=sleek_admin && rm -r ___sleek"
+    "make-pot-admin": "cp -r vendor/powerbuoy ___sleek && wp i18n make-pot . lang/admin/sleek_admin.pot --domain=sleek_admin && rm -r ___sleek",
+    "prettier:check": "npx prettier --check .",
+    "prettier:fix": "npx prettier --write .",
+    "lint": "npx eslint .",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -18,6 +22,12 @@
   "license": "GPL-2.0-or-later",
   "bugs": {
     "url": "https://github.com/powerbuoy/sleek/issues"
+  },
+  "lint-staged": {
+    "*.{sass,scss,js}": [
+      "prettier --write ."
+    ],
+    "*.js": "eslint --fix"
   },
   "homepage": "https://github.com/powerbuoy/sleek#readme",
   "devDependencies": {
@@ -39,7 +49,9 @@
     "eslint-plugin-import": "^2.26.0",
     "file-loader": "^6.0.0",
     "glob": "^7.1.6",
+    "husky": "^8.0.0",
     "import-glob-loader": "^1.1.0",
+    "lint-staged": "^13.0.3",
     "mini-css-extract-plugin": "^2.3.0",
     "po2mo-loader": "^1.0.3",
     "postcss": "^8.3.7",
