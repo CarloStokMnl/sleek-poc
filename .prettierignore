@@ -2,3 +2,7 @@
 package-lock.json
 build
 coverage
+node_modules
+dist
+lang
+vendor
