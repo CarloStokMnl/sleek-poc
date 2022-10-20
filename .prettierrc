@@ -4,7 +4,8 @@
         {
             "files": [
                 "/src/sass/modules",
-                "/src/sass/components"
+                "/src/sass/components",
+                "/modules"
             ],
             "options": {
                 "singleQuote": false
@@ -12,7 +13,8 @@
         },
         {
             "files": [
-                "**/*.css"
+                "**/*.scss",
+                "**/*.sass"
             ],
             "options": {
                 "printWidth": 120
