@@ -3,8 +3,10 @@
 
 namespace Sleek\Modules;
 
-class TextBlocks extends Module {
-	public function fields () {
+class TextBlocks extends Module
+{
+	public function fields()
+	{
 		return [
 			[
 				'name' => 'title',

@@ -31,7 +31,7 @@
   },
   "config": {
     "commitizen": {
-      "path": "git-cz"
+      "path": "./node_modules/cz-conventional-changelog"
     }
   },
   "homepage": "https://github.com/powerbuoy/sleek#readme",
