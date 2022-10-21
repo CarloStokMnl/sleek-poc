@@ -1,28 +1,33 @@
 {
-    "env": {
-        "browser": true,
-        "es2021": true
-    },
-    "extends": ["airbnb-base", "eslint:recommended", "prettier"],
-    "overrides": [],
-    "ignorePatterns": [
-        "/node_modules",
-        "/vendor",
-        "/dist",
-        "/lang",
-        "/src/icons.json",
-        "/src/assets/",
-        "/fontello.js",
-        "/webpack.config.js",
-        "/package.json",
-        "/.eslintrc.json",
-        "/fontello.js",
-        "/composer.json",
-        ".*"
-    ],
-    "parserOptions": {
-        "ecmaVersion": "latest",
-        "sourceType": "module"
-    },
-    "rules": {}
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["airbnb-base", "eslint:recommended", "prettier"],
+  "overrides": [],
+  "ignorePatterns": [
+    "/node_modules",
+    "/vendor",
+    "/dist",
+    "/lang",
+    "/src/icons.json",
+    "/src/assets/",
+    "/fontello.js",
+    "/webpack.config.js",
+    "/package.json",
+    "/package.lock",
+    "/fontello.js",
+    "/composer.json",
+    "/.*",
+    "/.husky",
+    "/.prettierrc",
+    "/.prettierignore",
+    "/commitlint.config.js",
+    "src/js/app.js"
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "rules": {}
 }

@@ -1,25 +1,25 @@
 // Icons and config
-@import "icons";
-@import "config";
+@import 'icons';
+@import 'config';
 
 // Vendor
-@import "~sleek-ui/src/sass/sleek-ui";
+@import '~sleek-ui/src/sass/sleek-ui';
 
 // Our stuff
 // @import "mixins/**/*.scss";
-@import "components/**/*.scss";
-@import "modules/**/*.scss";
+@import 'components/**/*.scss';
+@import 'modules/**/*.scss';
 // @import "../../modules/**/*.scss";
 
 // Global stuff
 html {
-	// Nicer text
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  // Nicer text
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
-	// Smooth scroll
-	scroll-behavior: smooth;
-	--scroll-behavior: smooth; // Polyfill
+  // Smooth scroll
+  scroll-behavior: smooth;
+  --scroll-behavior: smooth; // Polyfill
 }
 
 // Prevent scrollbar (https://stackoverflow.com/a/46039555)
@@ -34,19 +34,19 @@ html {
 
 // Hide adminbar
 html.admin-bar {
-	margin-top: 0 !important;
+  margin-top: 0 !important;
 
-	#wpadminbar {
-		transform: translateX(calc(100% - 35px));
-		transition: transform 0.5s 1s ease;
+  #wpadminbar {
+    transform: translateX(calc(100% - 35px));
+    transition: transform 0.5s 1s ease;
 
-		@media (--laptop-max) {
-			display: none;
-		}
+    @media (--laptop-max) {
+      display: none;
+    }
 
-		&:hover {
-			transform: translate(0, 0);
-			transition-delay: 0s;
-		}
-	}
+    &:hover {
+      transform: translate(0, 0);
+      transition-delay: 0s;
+    }
+  }
 }

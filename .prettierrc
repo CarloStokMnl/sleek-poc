@@ -1,5 +1,12 @@
 {
-    "tabWidth": 4,
+    "singleQuote": true,
+    "trailingComma": "all",
+    "jsxSingleQuote": false,
+    "arrowParens": "always",
+    "bracketSpacing": true,
+    "printWidth": 100,
+    "tabWidth": 2,
+    "semi": true,
     "overrides": [
         {
             "files": [

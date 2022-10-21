@@ -18,5 +18,9 @@ webpack.config.js
 **/.git
 src/assets/fontello
 .prettierrc
-/fontello.js
+fontello.js
+.eslintrc.json
+commitlint.config.js
 src/icons.json
+src/js/app.js
+.husky
