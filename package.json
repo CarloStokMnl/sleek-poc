@@ -57,7 +57,6 @@
     "eslint-config-problems": "^6.0.0",
     "eslint-plugin-import": "^2.26.0",
     "file-loader": "^6.0.0",
-    "git-cz": "^4.9.0",
     "glob": "^7.2.3",
     "husky": "^8.0.0",
     "import-glob-loader": "^1.1.0",
